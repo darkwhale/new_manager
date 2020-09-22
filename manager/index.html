@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/control_authority.js"></script>
+    <script type="text/javascript" src="js/authority_list.js"></script>
+    <script type="text/javascript" src="js/authority_add.js"></script>
+    <script type="text/javascript" src="js/authority_history.js"></script>
+    <title>api管理系统</title>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-body">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-clollapse-1" aria-expanded=false>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-clollapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">权限</a></li>
+                <li><a href="app.html">应用</a></li>
+                <li><a href="user.html">用户</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="login.html" id="login"></a></li>
+                <li><a href="" id="username"></a></li>
+                <li><a href="logout.html" id="logout"></a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container container-body">
+    <div class="row clearfix">
+        <div class="col-md-2" id="left_container">
+
+            <h2 class="index-title"><a href="javascript:void(0)" onclick="authority_list();" class="index-link">权限列表</a></h2>
+            <h2 class="index-title"><a href="javascript:void(0)" onclick="authority_add();" class="index-link">权限审批</a></h2>
+<!--            <h2 class="index-title"><a href="javascript:void(0)" onclick="authority_history();" class="index-link">审批历史</a></h2>-->
+
+        </div>
+
+        <div class="col-md-10 column left-border" id="right_container">
+
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

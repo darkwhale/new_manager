@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/control_apply.js"></script>
+    <title>api后台管理</title>
+
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-body">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-clollapse-1" aria-expanded=false>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-clollapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">应用市场</a></li>
+                <li><a href="auth.html">我的权限</a></li>
+                <li><a href="user.html">个人信息</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="login.html" id="login"></a></li>
+                <li><a href="" id="username"></a></li>
+                <li><a href="logout.html" id="logout"></a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container container-body">
+    <div class="row">
+        <div id="main_container">
+            <div>
+                <div class="form-group">
+                    <label for="app_name">应用名</label>
+                    <input type="text" class="form-control" id="app_name" disabled="disabled">
+                </div>
+                <div class="form-group">
+                    <label for="app_url">应用网址</label>
+                    <input type="text" class="form-control" id="app_url" disabled="disabled">
+                </div>
+                <div class="form-group">
+                    <label for="app_remark">应用说明</label>
+                    <input type="text" class="form-control" id="app_remark" disabled="disabled">
+                </div>
+                <div class="form-group">
+                    <label for="app_legal_time">有效期</label>
+                    <input type="number" class="form-control" id="app_legal_time" value="30">
+                </div>
+                <div class="form-group">
+                    <input type="button" id="app_button" class="btn exchange-button" onclick="post_apply();" value="提交">
+                </div>
+
+            </div>
+        </div>
+
+        <!--        <div class="col-md-10 left-border" id="right_container">-->
+
+        <!--        </div>-->
+    </div>
+</div>
+
+
+</body>
+</html>
